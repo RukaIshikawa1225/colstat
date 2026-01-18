@@ -5,11 +5,21 @@
 import sys
 
 def main():
-    pass
+    data = sys.stdin.read().strip()
+    if not data:
+        sys.exit(1)
+
+    try:
+        nums = [float(x) for x in data.replace(",", " ").split()]
+    except ValueError:
+        sys.exit(1)
+
+    count = len(nums)
+    total = sum(nums)
+    mean = total / count
+
+    print(count, total, mean)
 
 if __name__ == "__main__":
     main()
-
-nums = [float(x) for x in data.replace(",", " ").split()]
-print(sum(nums))
 
