@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# SPDX-FileCopyrightText: 2026 Ruka Ishikawa
+# SPDX-FileCopyrightText: 2026 石川 琉輝
 # SPDX-License-Identifier: BSD-3-Clause
 
 import sys
@@ -9,16 +9,26 @@ def main():
     if not data:
         sys.exit(1)
 
-    try:
-        nums = [float(x) for x in data.replace(",", " ").split()]
-    except ValueError:
-        sys.exit(1)
+    rows = []
+    for line in data.splitlines():
+        line = line.replace(",", " ")
+        try:
+            nums = [float(x) for x in line.split()]
+        except ValueError:
+            sys.exit(1)
+        rows.append(nums)
 
-    count = len(nums)
-    total = sum(nums)
-    mean = total / count
+    cols = len(rows[0])
+    for r in rows:
+        if len(r) != cols:
+            sys.exit(1)
 
-    print(count, total, mean)
+    for i in range(cols):
+        col = [r[i] for r in rows]
+        count = len(col)
+        total = sum(col)
+        mean = total / count
+        print(count, total, mean)
 
 if __name__ == "__main__":
     main()
