@@ -20,8 +20,8 @@ SPDX-License-Identifier: BSD-3-Clause
 
 ## 動作環境
 
-- Linux
-- Python 3
+- Linux(Ubuntu 20.04 で動作確認済み)
+- Python 3.8以降(Python 3.8/ 3.10/ 3.12 でGitHub Actions も通過確認済み)
 
 外部ライブラリは不要です。
 
