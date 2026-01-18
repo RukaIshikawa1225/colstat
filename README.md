@@ -87,8 +87,9 @@ echo -e "1 2\n3 4" | ./bin/colstat
 ```bash
 echo "1 a 3" | ./bin/colstat
 echo $?
-```
+
 1
+```
 
 ---
 
@@ -104,8 +105,9 @@ echo $?
 
 ```bash
 echo $?
-```
+
 0
+```
 
 ---
 
@@ -128,5 +130,6 @@ echo $?
 
 SPDX-FileCopyrightText: 2026 Ruka Ishikawa
 SPDX-License-Identifier: BSD-3-Clause
+```
 
 ---
