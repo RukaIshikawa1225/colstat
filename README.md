@@ -1,5 +1,5 @@
 ```yml
-SPDX-FileCopyrightText: 2026 石川 琉輝
+SPDX-FileCopyrightText: 2026 Ruka Ishikawa
 SPDX-License-Identifier: BSD-3-Clause
 ```
 
