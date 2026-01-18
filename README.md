@@ -30,7 +30,7 @@ SPDX-License-Identifier: BSD-3-Clause
 ## インストール
 
 ```bash
-git clone https://github.com/RukaIshikawa2025/colstat.git
+git clone https://github.com/RukaIshikawa1225/colstat.git
 cd colstat
 chmod +x bin/colstat
 ```
