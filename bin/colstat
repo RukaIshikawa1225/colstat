@@ -10,3 +10,6 @@ def main():
 if __name__ == "__main__":
     main()
 
+nums = [float(x) for x in data.replace(",", " ").split()]
+print(sum(nums))
+
