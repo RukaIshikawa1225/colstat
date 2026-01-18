@@ -31,7 +31,7 @@
 git clone https://github.com/RukaIshikawa2025/colstat.git
 cd colstat
 chmod +x bin/colstat
-
+```
 ---
 
 ## 使い方
@@ -41,16 +41,16 @@ chmod +x bin/colstat
 
 ### 基本的な使い方
 
+
 ```bash
 echo -e "1 2\n3 4" | ./bin/colstat
-
+```
 ### 出力例
 
 ```text
-
  2 4 2
  2 6 3
-
+```
 この例では：
  1列目：1,3→件数2/合計4/平均2
  2列目：2,4→件数2/合計6/平均3
@@ -65,15 +65,14 @@ echo -e "1 2\n3 4" | ./bin/colstat
 ### 対応例
 
 ```text
-
  1 2 3
  4 5 6
+```
 
 ```text
-
  1,2,3
  4,5,6
-
+```
 ---
 
 ## 異常系の扱い
@@ -86,10 +85,9 @@ echo -e "1 2\n3 4" | ./bin/colstat
 ### 例
 
 ```bash
-
 echo "1 a 3" | ./bin/colstat
 echo $?
-
+```
 1
 
 ---
@@ -99,15 +97,14 @@ echo $?
 テストはbashスクリプトで実装されています
 
 ```bash
-
 ./test/test.bash
+```
 
 正常終了時は何も表示されず、終了ステータスは0になります
 
 ```bash
-
 echo $?
-
+```
 0
 
 ---
