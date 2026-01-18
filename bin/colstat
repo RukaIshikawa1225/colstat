@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2026 Ruka Ishikawa
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+
