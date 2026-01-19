@@ -1,7 +1,4 @@
-```yml
-SPDX-FileCopyrightText: 2026 Ruka Ishikawa
-SPDX-License-Identifier: BSD-3-Clause
-```
+# colstat
 
 `colstat` は、**標準入力から数値データを受け取り、各列ごとに件数・合計・平均を計算して出力する Linux コマンド**です。  
 空白区切りやカンマ区切りの数値データを扱うことができます。
